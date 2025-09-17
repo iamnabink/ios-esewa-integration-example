@@ -13,7 +13,7 @@ import Foundation
 
 
 // MARK: - Complete Payment View (Updated)
-struct ESewaPaymentTestView: View {
+public struct ESewaPaymentTestView: View {
     let config: ESewaPaymentConfig
     @Environment(\.dismiss) private var dismiss
     
@@ -24,9 +24,13 @@ struct ESewaPaymentTestView: View {
     @State private var alertMessage = ""
     @State private var alertTitle = ""
     
+    public init(config: ESewaPaymentConfig) {
+            self.config = config
+        }
+    
     private let esewaURL = URL(string: "https://rc-epay.esewa.com.np/api/epay/main/v2/form")!
     
-    var body: some View {
+   public var body: some View {
         NavigationView {
             VStack {
                 // Payment Info

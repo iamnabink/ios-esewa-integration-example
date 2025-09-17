@@ -12,14 +12,14 @@ import Foundation
 // Password : Nepal@123
 //Token:123456
 
-struct ESewaPaymentConfig {
-    let amount: String
-    let taxAmount: String
-    let productServiceCharge: String
-    let productDeliveryCharge: String
-    let productCode: String
-    let successURL: String
-    let failureURL: String
+public struct ESewaPaymentConfig {
+    public  let amount: String
+    public let taxAmount: String
+    public  let productServiceCharge: String
+    public   let productDeliveryCharge: String
+    public   let productCode: String
+    public  let successURL: String
+    public  let failureURL: String
     
     var totalAmount: String {
         let amount = Double(self.amount) ?? 0
@@ -61,6 +61,24 @@ struct ESewaPaymentConfig {
         
         return paymentData
     }
+    // Public initializer
+        public init(
+            amount: String,
+            taxAmount: String,
+            productServiceCharge: String,
+            productDeliveryCharge: String,
+            productCode: String,
+            successURL: String,
+            failureURL: String
+        ) {
+            self.amount = amount
+            self.taxAmount = taxAmount
+            self.productServiceCharge = productServiceCharge
+            self.productDeliveryCharge = productDeliveryCharge
+            self.productCode = productCode
+            self.successURL = successURL
+            self.failureURL = failureURL
+        }
     
     static var testConfig: ESewaPaymentConfig {
         ESewaPaymentConfig(
