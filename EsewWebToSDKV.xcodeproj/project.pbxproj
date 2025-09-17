@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		D1D04C012E6EA0AD0081FF7E /* EsewWebToSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsewWebToSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C466042E7ACCE80003FB67 /* EsewWebToSDKV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EsewWebToSDKV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D1D04C032E6EA0AD0081FF7E /* EsewWebToSDK */ = {
+		D1C466062E7ACCE80003FB67 /* EsewWebToSDKV */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EsewWebToSDK;
+			path = EsewWebToSDKV;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D1D04BFE2E6EA0AD0081FF7E /* Frameworks */ = {
+		D1C466012E7ACCE80003FB67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,83 +29,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D1D04BF82E6EA0AD0081FF7E = {
+		D1C465FA2E7ACCE80003FB67 = {
 			isa = PBXGroup;
 			children = (
-				D1D04C032E6EA0AD0081FF7E /* EsewWebToSDK */,
-				D1D04C022E6EA0AD0081FF7E /* Products */,
+				D1C466062E7ACCE80003FB67 /* EsewWebToSDKV */,
+				D1C466052E7ACCE80003FB67 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D1D04C022E6EA0AD0081FF7E /* Products */ = {
+		D1C466052E7ACCE80003FB67 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1D04C012E6EA0AD0081FF7E /* EsewWebToSDK.app */,
+				D1C466042E7ACCE80003FB67 /* EsewWebToSDKV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D1C465FF2E7ACCE80003FB67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D1D04C002E6EA0AD0081FF7E /* EsewWebToSDK */ = {
+		D1C466032E7ACCE80003FB67 /* EsewWebToSDKV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1D04C242E6EA0AF0081FF7E /* Build configuration list for PBXNativeTarget "EsewWebToSDK" */;
+			buildConfigurationList = D1C4660B2E7ACCE80003FB67 /* Build configuration list for PBXNativeTarget "EsewWebToSDKV" */;
 			buildPhases = (
-				D1D04BFD2E6EA0AD0081FF7E /* Sources */,
-				D1D04BFE2E6EA0AD0081FF7E /* Frameworks */,
-				D1D04BFF2E6EA0AD0081FF7E /* Resources */,
+				D1C465FF2E7ACCE80003FB67 /* Headers */,
+				D1C466002E7ACCE80003FB67 /* Sources */,
+				D1C466012E7ACCE80003FB67 /* Frameworks */,
+				D1C466022E7ACCE80003FB67 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D1D04C032E6EA0AD0081FF7E /* EsewWebToSDK */,
+				D1C466062E7ACCE80003FB67 /* EsewWebToSDKV */,
 			);
-			name = EsewWebToSDK;
+			name = EsewWebToSDKV;
 			packageProductDependencies = (
 			);
-			productName = EsewWebToSDK;
-			productReference = D1D04C012E6EA0AD0081FF7E /* EsewWebToSDK.app */;
-			productType = "com.apple.product-type.application";
+			productName = EsewWebToSDKV;
+			productReference = D1C466042E7ACCE80003FB67 /* EsewWebToSDKV.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D1D04BF92E6EA0AD0081FF7E /* Project object */ = {
+		D1C465FB2E7ACCE80003FB67 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					D1D04C002E6EA0AD0081FF7E = {
+					D1C466032E7ACCE80003FB67 = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 				};
 			};
-			buildConfigurationList = D1D04BFC2E6EA0AD0081FF7E /* Build configuration list for PBXProject "EsewWebToSDK" */;
+			buildConfigurationList = D1C465FE2E7ACCE80003FB67 /* Build configuration list for PBXProject "EsewWebToSDKV" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D1D04BF82E6EA0AD0081FF7E;
+			mainGroup = D1C465FA2E7ACCE80003FB67;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D1D04C022E6EA0AD0081FF7E /* Products */;
+			productRefGroup = D1C466052E7ACCE80003FB67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1D04C002E6EA0AD0081FF7E /* EsewWebToSDK */,
+				D1C466032E7ACCE80003FB67 /* EsewWebToSDKV */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D1D04BFF2E6EA0AD0081FF7E /* Resources */ = {
+		D1C466022E7ACCE80003FB67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +127,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D1D04BFD2E6EA0AD0081FF7E /* Sources */ = {
+		D1C466002E7ACCE80003FB67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +137,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D1D04C222E6EA0AF0081FF7E /* Debug */ = {
+		D1C466092E7ACCE80003FB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -159,6 +171,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = KGP4JLC4GR;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -186,10 +199,12 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D1D04C232E6EA0AF0081FF7E /* Release */ = {
+		D1C4660A2E7ACCE80003FB67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,6 +238,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = KGP4JLC4GR;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -243,70 +259,77 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		D1D04C252E6EA0AF0081FF7E /* Debug */ = {
+		D1C4660C2E7ACCE80003FB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KGP4JLC4GR;
-				ENABLE_PREVIEWS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDKV;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D1D04C262E6EA0AF0081FF7E /* Release */ = {
+		D1C4660D2E7ACCE80003FB67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KGP4JLC4GR;
-				ENABLE_PREVIEWS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDKV;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,25 +338,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1D04BFC2E6EA0AD0081FF7E /* Build configuration list for PBXProject "EsewWebToSDK" */ = {
+		D1C465FE2E7ACCE80003FB67 /* Build configuration list for PBXProject "EsewWebToSDKV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1D04C222E6EA0AF0081FF7E /* Debug */,
-				D1D04C232E6EA0AF0081FF7E /* Release */,
+				D1C466092E7ACCE80003FB67 /* Debug */,
+				D1C4660A2E7ACCE80003FB67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1D04C242E6EA0AF0081FF7E /* Build configuration list for PBXNativeTarget "EsewWebToSDK" */ = {
+		D1C4660B2E7ACCE80003FB67 /* Build configuration list for PBXNativeTarget "EsewWebToSDKV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1D04C252E6EA0AF0081FF7E /* Debug */,
-				D1D04C262E6EA0AF0081FF7E /* Release */,
+				D1C4660C2E7ACCE80003FB67 /* Debug */,
+				D1C4660D2E7ACCE80003FB67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D1D04BF92E6EA0AD0081FF7E /* Project object */;
+	rootObject = D1C465FB2E7ACCE80003FB67 /* Project object */;
 }
