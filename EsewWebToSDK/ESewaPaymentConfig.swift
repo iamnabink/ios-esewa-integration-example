@@ -8,7 +8,8 @@
 import Foundation
 
 
-//eSewa ID: /2/3/4/5cc
+//eSewa ID: 9806800001/2/3/4/5cc
+// Password : Nepal@123
 //Token:123456
 
 struct ESewaPaymentConfig {
@@ -29,6 +30,7 @@ struct ESewaPaymentConfig {
     }
     
     func generatePaymentData() -> [String: String] {
+        // Generate fresh credentials for each request
         let transactionUUID = ESewaSignatureGenerator.generateTransactionUUID()
         let signature = ESewaSignatureGenerator.generateSignature(
             totalAmount: totalAmount,
@@ -36,7 +38,7 @@ struct ESewaPaymentConfig {
             productCode: productCode
         )
         
-        return [
+        let paymentData = [
             "amount": amount,
             "tax_amount": taxAmount,
             "total_amount": totalAmount,
@@ -49,6 +51,15 @@ struct ESewaPaymentConfig {
             "signed_field_names": "total_amount,transaction_uuid,product_code",
             "signature": signature
         ]
+        
+        // Debug logging for verification
+        print("=== New Payment Request Generated ===")
+        print("Transaction UUID: \(transactionUUID)")
+        print("Total Amount: \(totalAmount)")
+        print("Signature: \(signature)")
+        print("Signed Data: total_amount=\(totalAmount),transaction_uuid=\(transactionUUID),product_code=\(productCode)")
+        
+        return paymentData
     }
     
     static var testConfig: ESewaPaymentConfig {
