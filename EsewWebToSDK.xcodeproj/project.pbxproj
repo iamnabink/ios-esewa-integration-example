@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		D1D04C112E6EA0AF0081FF7E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D1D04BF92E6EA0AD0081FF7E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D1D04C002E6EA0AD0081FF7E;
-			remoteInfo = EsewWebToSDK;
-		};
-		D1D04C1B2E6EA0AF0081FF7E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D1D04BF92E6EA0AD0081FF7E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D1D04C002E6EA0AD0081FF7E;
-			remoteInfo = EsewWebToSDK;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D1D04C012E6EA0AD0081FF7E /* EsewWebToSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsewWebToSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1D04C102E6EA0AF0081FF7E /* EsewWebToSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EsewWebToSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1D04C1A2E6EA0AF0081FF7E /* EsewWebToSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EsewWebToSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,34 +16,10 @@
 			path = EsewWebToSDK;
 			sourceTree = "<group>";
 		};
-		D1D04C132E6EA0AF0081FF7E /* EsewWebToSDKTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EsewWebToSDKTests;
-			sourceTree = "<group>";
-		};
-		D1D04C1D2E6EA0AF0081FF7E /* EsewWebToSDKUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EsewWebToSDKUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D1D04BFE2E6EA0AD0081FF7E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1D04C0D2E6EA0AF0081FF7E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1D04C172E6EA0AF0081FF7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				D1D04C032E6EA0AD0081FF7E /* EsewWebToSDK */,
-				D1D04C132E6EA0AF0081FF7E /* EsewWebToSDKTests */,
-				D1D04C1D2E6EA0AF0081FF7E /* EsewWebToSDKUITests */,
 				D1D04C022E6EA0AD0081FF7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				D1D04C012E6EA0AD0081FF7E /* EsewWebToSDK.app */,
-				D1D04C102E6EA0AF0081FF7E /* EsewWebToSDKTests.xctest */,
-				D1D04C1A2E6EA0AF0081FF7E /* EsewWebToSDKUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,52 +70,6 @@
 			productReference = D1D04C012E6EA0AD0081FF7E /* EsewWebToSDK.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D1D04C0F2E6EA0AF0081FF7E /* EsewWebToSDKTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D1D04C272E6EA0AF0081FF7E /* Build configuration list for PBXNativeTarget "EsewWebToSDKTests" */;
-			buildPhases = (
-				D1D04C0C2E6EA0AF0081FF7E /* Sources */,
-				D1D04C0D2E6EA0AF0081FF7E /* Frameworks */,
-				D1D04C0E2E6EA0AF0081FF7E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D1D04C122E6EA0AF0081FF7E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D1D04C132E6EA0AF0081FF7E /* EsewWebToSDKTests */,
-			);
-			name = EsewWebToSDKTests;
-			packageProductDependencies = (
-			);
-			productName = EsewWebToSDKTests;
-			productReference = D1D04C102E6EA0AF0081FF7E /* EsewWebToSDKTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D1D04C192E6EA0AF0081FF7E /* EsewWebToSDKUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D1D04C2A2E6EA0AF0081FF7E /* Build configuration list for PBXNativeTarget "EsewWebToSDKUITests" */;
-			buildPhases = (
-				D1D04C162E6EA0AF0081FF7E /* Sources */,
-				D1D04C172E6EA0AF0081FF7E /* Frameworks */,
-				D1D04C182E6EA0AF0081FF7E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D1D04C1C2E6EA0AF0081FF7E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D1D04C1D2E6EA0AF0081FF7E /* EsewWebToSDKUITests */,
-			);
-			name = EsewWebToSDKUITests;
-			packageProductDependencies = (
-			);
-			productName = EsewWebToSDKUITests;
-			productReference = D1D04C1A2E6EA0AF0081FF7E /* EsewWebToSDKUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +82,6 @@
 				TargetAttributes = {
 					D1D04C002E6EA0AD0081FF7E = {
 						CreatedOnToolsVersion = 16.4;
-					};
-					D1D04C0F2E6EA0AF0081FF7E = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = D1D04C002E6EA0AD0081FF7E;
-					};
-					D1D04C192E6EA0AF0081FF7E = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = D1D04C002E6EA0AD0081FF7E;
 					};
 				};
 			};
@@ -201,28 +100,12 @@
 			projectRoot = "";
 			targets = (
 				D1D04C002E6EA0AD0081FF7E /* EsewWebToSDK */,
-				D1D04C0F2E6EA0AF0081FF7E /* EsewWebToSDKTests */,
-				D1D04C192E6EA0AF0081FF7E /* EsewWebToSDKUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D1D04BFF2E6EA0AD0081FF7E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1D04C0E2E6EA0AF0081FF7E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1D04C182E6EA0AF0081FF7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,34 +122,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1D04C0C2E6EA0AF0081FF7E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1D04C162E6EA0AF0081FF7E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D1D04C122E6EA0AF0081FF7E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D1D04C002E6EA0AD0081FF7E /* EsewWebToSDK */;
-			targetProxy = D1D04C112E6EA0AF0081FF7E /* PBXContainerItemProxy */;
-		};
-		D1D04C1C2E6EA0AF0081FF7E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D1D04C002E6EA0AD0081FF7E /* EsewWebToSDK */;
-			targetProxy = D1D04C1B2E6EA0AF0081FF7E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D1D04C222E6EA0AF0081FF7E /* Debug */ = {
@@ -405,6 +261,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +269,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,6 +294,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,81 +302,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D1D04C282E6EA0AF0081FF7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KGP4JLC4GR;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EsewWebToSDK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EsewWebToSDK";
-			};
-			name = Debug;
-		};
-		D1D04C292E6EA0AF0081FF7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KGP4JLC4GR;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EsewWebToSDK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EsewWebToSDK";
-			};
-			name = Release;
-		};
-		D1D04C2B2E6EA0AF0081FF7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KGP4JLC4GR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDKUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EsewWebToSDK;
-			};
-			name = Debug;
-		};
-		D1D04C2C2E6EA0AF0081FF7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KGP4JLC4GR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabrajkhadka.esewaWebToSdk.EsewWebToSDKUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EsewWebToSDK;
 			};
 			name = Release;
 		};
@@ -535,24 +329,6 @@
 			buildConfigurations = (
 				D1D04C252E6EA0AF0081FF7E /* Debug */,
 				D1D04C262E6EA0AF0081FF7E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D1D04C272E6EA0AF0081FF7E /* Build configuration list for PBXNativeTarget "EsewWebToSDKTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D1D04C282E6EA0AF0081FF7E /* Debug */,
-				D1D04C292E6EA0AF0081FF7E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D1D04C2A2E6EA0AF0081FF7E /* Build configuration list for PBXNativeTarget "EsewWebToSDKUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D1D04C2B2E6EA0AF0081FF7E /* Debug */,
-				D1D04C2C2E6EA0AF0081FF7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

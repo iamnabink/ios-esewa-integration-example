@@ -25,57 +25,61 @@ struct PaymentView: View {
     @State private var productCode = "EPAYTEST"
     
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 20) {
-                VStack(alignment: .leading, spacing: 15) {
-                    Text("Payment Configuration")
-                        .font(.headline)
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                VStack(spacing: 20) {
+                    VStack(alignment: .leading, spacing: 15) {
+                        Text("Payment Configuration")
+                            .font(.headline)
+                        
+                        VStack(alignment: .leading) {
+                            Text("Amount (Rs.)")
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                            TextField("Enter amount", text: $amount)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .keyboardType(.decimalPad)
+                        }
+                        
+                        VStack(alignment: .leading) {
+                            Text("Product Code")
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                            TextField("Product code", text: $productCode)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                        }
+                    }
+                    .padding()
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
                     
-                    VStack(alignment: .leading) {
-                        Text("Amount (Rs.)")
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                        TextField("Enter amount", text: $amount)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .keyboardType(.decimalPad)
+                    NavigationLink(destination: {
+                        let config = ESewaPaymentConfig(
+                            amount: amount,
+                            taxAmount: "0",
+                            productServiceCharge: "0",
+                            productDeliveryCharge: "0",
+                            productCode: productCode,
+                            successURL: "https://developer.esewa.com.np/success",
+                            failureURL: "https://developer.esewa.com.np/failure"
+                        )
+                        return ESewaPaymentTestView(config: config)
+                    }) {
+                        Text("Proceed to Payment")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     }
                     
-                    VStack(alignment: .leading) {
-                        Text("Product Code")
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                        TextField("Product code", text: $productCode)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                    }
+                    Spacer()
                 }
                 .padding()
-                .background(Color(.systemGray6))
-                .cornerRadius(10)
-                
-                NavigationLink(destination: {
-                    let config = ESewaPaymentConfig(
-                        amount: amount,
-                        taxAmount: "0",
-                        productServiceCharge: "0",
-                        productDeliveryCharge: "0",
-                        productCode: productCode,
-                        successURL: "https://developer.esewa.com.np/success",
-                        failureURL: "https://developer.esewa.com.np/failure"
-                    )
-                    return ESewaPaymentTestView(config: config)
-                }) {
-                    Text("Proceed to Payment")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                
-                Spacer()
+                .navigationTitle("eSewa Integration")
             }
-            .padding()
-            .navigationTitle("eSewa Integration")
+        } else {
+            // Fallback on earlier versions
         }
     }
 }

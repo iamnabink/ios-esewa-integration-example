@@ -8,10 +8,9 @@
 import Foundation
 
 
-//eSewa ID: 9806800001/2/3/4/5cc
+//eSewa ID: /2/3/4/5cc
 //Token:123456
 
-// MARK: - eSewa Payment Configuration
 struct ESewaPaymentConfig {
     let amount: String
     let taxAmount: String
