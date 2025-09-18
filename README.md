@@ -2,6 +2,99 @@
 
 A native iOS XCFramework that provides seamless integration with eSewa payment gateway, converting web-based payment flows into a native iOS experience.
 
+# Release: EsewWebToSDKV.xcframework
+
+This section explains how to build the `EsewWebToSDKV` XCFramework from source. The XCFramework supports both **iOS devices** and **simulators**.
+
+---
+
+### 1. Prerequisites
+
+* Xcode 16 or later
+* macOS system with Terminal
+* Project source checked out locally
+* The `EsewWebToSDKV` framework target in your project
+
+---
+
+### 2. Build the framework for iOS devices (Archive)
+
+1. Open your project in Xcode.
+2. Select the **`EsewWebToSDKV` scheme**.
+3. Choose **Generic iOS Device** as the build target.
+4. Make sure the following Build Settings are correct for the framework target:
+
+   * `SKIP_INSTALL = NO`
+   * `BUILD_LIBRARY_FOR_DISTRIBUTION = YES`
+5. Archive the framework:
+
+   * **Product → Archive**
+6. After archiving, locate the framework in Finder:
+
+   ```
+   ~/Library/Developer/Xcode/Archives/<date>/<archive-name>.xcarchive/Products/Library/Frameworks/EsewWebToSDKV.framework
+   ```
+
+---
+
+### 3. Build the framework for iOS Simulator
+
+From your **project root** in Terminal:
+
+```bash
+mkdir -p build/iphonesimulator
+
+xcodebuild build \
+  -scheme EsewWebToSDKV \
+  -configuration Release \
+  -sdk iphonesimulator \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
+  SKIP_INSTALL=NO \
+  BUILD_DIR=build/iphonesimulator
+```
+
+The simulator framework will be at:
+
+```
+build/iphonesimulator/Release-iphonesimulator/EsewWebToSDKV.framework
+```
+
+---
+
+### 4. Create the XCFramework
+
+Run the following Terminal command from your **project root** (adjust archive name if different):
+
+```bash
+xcodebuild -create-xcframework \
+  -framework "/Users/<your-username>/Library/Developer/Xcode/Archives/<date>/EsewWebToSDKV <date-time>.xcarchive/Products/Library/Frameworks/EsewWebToSDKV.framework" \
+  -framework "build/iphonesimulator/Release-iphonesimulator/EsewWebToSDKV.framework" \
+  -output EsewWebToSDKV.xcframework
+```
+
+After this, the **`EsewWebToSDKV.xcframework`** will appear in the current directory.
+
+---
+
+### 5. Add the XCFramework to your project
+
+1. Drag the `EsewWebToSDKV.xcframework` into your Xcode app project.
+2. Go to your app target → **General → Frameworks, Libraries, and Embedded Content**.
+3. Set it to **Embed & Sign**.
+4. You can now `import EsewWebToSDKV` in your Swift code.
+
+---
+
+### 6. Notes
+
+* You only need to rebuild the XCFramework when the source framework changes.
+* Always build both device and simulator slices to ensure compatibility with all targets.
+* For automation, consider creating a shell script to build device + simulator and create the XCFramework in one step.
+
+---
+
+
+# Usage
 ## 🚀 Features
 
 - **Native iOS Integration**: Built as an XCFramework for easy integration into iOS projects
