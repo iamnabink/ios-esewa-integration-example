@@ -19,7 +19,7 @@ public struct ESewaPaymentTestView: View {
     
     @State private var isLoading = true
     @State private var currentURL: String?
-    @State private var paymentStatus: String = "Initializing Payment..."
+    @State private var paymentStatus: String = "Processing payment..."
     @State private var showAlert = false
     @State private var alertMessage = ""
     @State private var alertTitle = ""
@@ -34,35 +34,23 @@ public struct ESewaPaymentTestView: View {
         NavigationView {
             VStack {
                 // Payment Info
-                VStack(alignment: .leading, spacing: 8) {
-                    HStack {
-                        Text("Amount:")
-                            .fontWeight(.medium)
-                        Spacer()
-                        Text("Rs. \(config.totalAmount)")
-                            .fontWeight(.bold)
-                            .foregroundColor(.green)
-                    }
-                    
-                    HStack {
-                        Text("Status:")
-                            .fontWeight(.medium)
-                        Spacer()
+                if isLoading {
+                    VStack(spacing: 12) {
                         Text(paymentStatus)
                             .font(.caption)
                             .foregroundColor(.secondary)
-                    }
-                    
-                    if isLoading {
+                            .multilineTextAlignment(.center) // center text if long
+
                         ProgressView()
-                            .scaleEffect(0.8)
+                            .progressViewStyle(CircularProgressViewStyle(tint: .blue)) // optional color
+                            .scaleEffect(1.0)
                             .frame(maxWidth: .infinity, alignment: .center)
                     }
+                    .padding()
+                    .background(Color(.systemGray6)) // subtle background
+                    .padding(.horizontal, 16)
                 }
-                .padding()
-                .background(Color(.systemGray6))
-                .cornerRadius(10)
-                .padding(.horizontal)
+
                 
                 // Use the fixed WebView
                 CustomESewaWebView(
@@ -84,9 +72,6 @@ public struct ESewaPaymentTestView: View {
                     }
                 )
             }
-            .navigationTitle("eSewa Payment")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarBackButtonHidden(false)
             .alert(alertTitle, isPresented: $showAlert) {
                 Button("OK") {
                     dismiss()

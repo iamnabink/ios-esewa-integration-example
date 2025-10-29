@@ -76,7 +76,7 @@ struct PaymentViewTest: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("eSewa Integration")
+            .navigationTitle("Pay with eSewa")
         }
     }
 }
